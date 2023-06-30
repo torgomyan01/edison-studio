@@ -1,0 +1,425 @@
+@font-face {
+  font-family: "Futura New";
+  src: url("../assets/fonts/FuturaNewMedium-Reg.eot");
+  src: local("Futura New Medium Reg"), local("FuturaNewMedium-Reg"), url("../assets/fonts/FuturaNewMedium-Reg.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/FuturaNewMedium-Reg.woff2") format("woff2"), url("../assets/fonts/FuturaNewMedium-Reg.woff") format("woff"), url("../assets/fonts/FuturaNewMedium-Reg.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Futura New";
+  src: url("../assets/fonts/FuturaNewHeavy-Reg.eot");
+  src: local("Futura New Heavy Reg"), local("FuturaNewHeavy-Reg"), url("../assets/fonts/FuturaNewHeavy-Reg.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/FuturaNewHeavy-Reg.woff2") format("woff2"), url("../assets/fonts/FuturaNewHeavy-Reg.woff") format("woff"), url("../assets/fonts/FuturaNewHeavy-Reg.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Futura New";
+  src: url("../assets/fonts/FuturaNewExtraBold-Reg.eot");
+  src: local("Futura New ExtraBold Reg"), local("FuturaNewExtraBold-Reg"), url("../assets/fonts/FuturaNewExtraBold-Reg.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/FuturaNewExtraBold-Reg.woff2") format("woff2"), url("../assets/fonts/FuturaNewExtraBold-Reg.woff") format("woff"), url("../assets/fonts/FuturaNewExtraBold-Reg.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Futura New";
+  src: url("../assets/fonts/FuturaNewLight-Reg.eot");
+  src: local("Futura New Light Reg"), local("FuturaNewLight-Reg"), url("../assets/fonts/FuturaNewLight-Reg.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/FuturaNewLight-Reg.woff2") format("woff2"), url("../assets/fonts/FuturaNewLight-Reg.woff") format("woff"), url("../assets/fonts/FuturaNewLight-Reg.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Futura New";
+  src: url("../assets/fonts/FuturaNewBold-Reg.eot");
+  src: local("Futura New Bold Reg"), local("FuturaNewBold-Reg"), url("../assets/fonts/FuturaNewBold-Reg.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/FuturaNewBold-Reg.woff2") format("woff2"), url("../assets/fonts/FuturaNewBold-Reg.woff") format("woff"), url("../assets/fonts/FuturaNewBold-Reg.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Days";
+  src: url("../assets/fonts/FuturaNewBold-Reg.eot");
+  src: url("../assets/fonts/Days.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(17, 13, 35);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2a2929;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Futura New", sans-serif;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media (max-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+}
+body {
+  min-height: 100vh;
+}
+
+.font-days {
+  font-family: "Days";
+}
+
+.trans {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+@media (min-width: 1200px) {
+  .h-xl-unset {
+    height: unset !important;
+  }
+}
+
+.ourServices {
+  width: 100%;
+  height: auto;
+  background-color: #FFAA1A;
+  padding-top: 5.25rem;
+}
+@media (max-width: 768px) {
+  .ourServices {
+    padding-top: 3.625rem;
+  }
+}
+.ourServices-title {
+  color: #434343;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 2.25rem;
+  text-align: center;
+  margin-bottom: 5.625rem;
+}
+@media (max-width: 768px) {
+  .ourServices-title {
+    font-size: 2.8rem;
+    margin-bottom: 3.625rem;
+  }
+}
+.ourServices-item {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.25rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 1.5625rem;
+  border-radius: 5px;
+  background: #FFF;
+  -webkit-box-shadow: 0 4px 16px 0 rgba(67, 67, 67, 0.15);
+  box-shadow: 0 4px 16px 0 rgba(67, 67, 67, 0.15);
+  border: 1px solid transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+@media (max-width: 1400px) {
+  .ourServices-item {
+    gap: 0.5rem;
+  }
+}
+.ourServices-item:hover {
+  border: 1px solid #0057B3;
+}
+.ourServices-item-title {
+  color: #434343;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: normal;
+}
+.ourServices-item-subtitle {
+  color: #434343;
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 450;
+}
+
+.btn-blue {
+  padding: 1.25rem 2.5rem;
+  border-radius: 5px;
+  background: #0057B3;
+  border: 1px solid #0057B3 !important;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
+  color: #FFF;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 450;
+  line-height: 1.5rem;
+}
+.btn-blue:hover {
+  background-color: #fff;
+  color: #0057B3;
+}
+
+.solid {
+  width: 0.125rem;
+  height: 2.375rem;
+  background-color: #B3B3B3;
+  margin: 0 0.9375rem;
+}
+@media (max-width: 768px) {
+  .solid {
+    display: none;
+  }
+}
+
+.companyInfo {
+  width: 100%;
+  height: 100%;
+  background: #fff url("../assets/images/company-info-bg.svg") no-repeat center bottom;
+  background-size: contain;
+}
+@media (max-width: 1440px) {
+  .companyInfo {
+    background-size: 151%;
+  }
+}
+@media (max-width: 1400px) {
+  .companyInfo {
+    background-size: 308%;
+  }
+}
+@media (max-width: 1200px) {
+  .companyInfo {
+    background-size: contain;
+  }
+}
+.companyInfo-name {
+  color: #434343;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+@media (max-width: 768px) {
+  .companyInfo-name {
+    position: absolute;
+    left: 0;
+    top: 6.8rem;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+  }
+}
+.companyInfo-logo {
+  margin-bottom: 0.625rem;
+}
+.companyInfo-title {
+  color: #434343;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: 100%;
+  max-width: 48.375rem;
+  margin: 4.3125rem auto 0;
+}
+@media (max-width: 1440px) {
+  .companyInfo-title {
+    font-size: 2.5rem;
+    padding: 0 10px;
+  }
+}
+@media (max-width: 768px) {
+  .companyInfo-title {
+    margin-top: 6rem;
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  .companyInfo-title {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 425px) {
+  .companyInfo-title {
+    font-size: 1.7rem;
+  }
+}
+.companyInfo-title:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 29.0625rem;
+  height: 8.6875rem;
+  background: -webkit-gradient(linear, left top, right top, from(#FF9C00), to(#FFAA1A));
+  background: linear-gradient(90deg, #FF9C00 0%, #FFAA1A 100%);
+  margin-top: -0.625rem;
+}
+@media (max-width: 1440px) {
+  .companyInfo-title:before {
+    margin-top: -1.25rem;
+  }
+}
+@media (max-width: 576px) {
+  .companyInfo-title:before {
+    height: 7.5rem;
+    width: 50%;
+  }
+}
+@media (max-width: 425px) {
+  .companyInfo-title:before {
+    margin-top: -0.5rem;
+  }
+}
+.companyInfo-title span {
+  position: relative;
+}
+.companyInfo-form {
+  width: 100%;
+  max-width: 48.125rem;
+  margin: 6.125rem auto 0;
+}
+@media (max-width: 1400px) {
+  .companyInfo-form {
+    padding: 0 10px;
+  }
+}
+
+.def-input {
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.0625rem 0.625rem 1.0625rem 1.25rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 0.8125rem;
+  border-radius: 5px;
+  border: 1px solid var(--dont-active, #B3B3B3);
+  background: #FFF;
+}
+.def-input input, .def-input textarea {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  font-size: 1.3rem;
+  color: #434343;
+  resize: none;
+}
+.def-input input::-webkit-input-placeholder, .def-input textarea::-webkit-input-placeholder {
+  color: #B3B3B3;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.def-input input::-moz-placeholder, .def-input textarea::-moz-placeholder {
+  color: #B3B3B3;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.def-input input:-ms-input-placeholder, .def-input textarea:-ms-input-placeholder {
+  color: #B3B3B3;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.def-input input::-ms-input-placeholder, .def-input textarea::-ms-input-placeholder {
+  color: #B3B3B3;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.def-input input::placeholder, .def-input textarea::placeholder {
+  color: #B3B3B3;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.modal {
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+
+#book-a-demo .modal-dialog {
+  max-width: 930px;
+}
+#book-a-demo .modal-header {
+  padding: 3.125rem 3.125rem 1.25rem 1.875rem;
+  border: 0;
+  position: relative;
+}
+@media (max-width: 576px) {
+  #book-a-demo .modal-header {
+    padding: 2.125rem 2.125rem 0.25rem 0.875rem;
+  }
+}
+#book-a-demo .modal-header:before {
+  content: "";
+  position: absolute;
+  width: 75px;
+  height: 85px;
+  background: -webkit-gradient(linear, left top, right top, from(#FF9C00), to(#FFAA1A));
+  background: linear-gradient(90deg, #FF9C00 0%, #FFAA1A 100%);
+  left: 0;
+  top: 50px;
+}
+@media (max-width: 576px) {
+  #book-a-demo .modal-header:before {
+    top: 40px;
+  }
+}
+#book-a-demo .modal-title {
+  color: #434343;
+  font-size: 1.875rem;
+  font-weight: 600;
+  line-height: 2.1875rem;
+  text-transform: uppercase;
+}
+#book-a-demo .modal-title span {
+  position: relative;
+  top: 25px;
+}
+
+/*# sourceMappingURL=style.css.map */
